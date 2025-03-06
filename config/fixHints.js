@@ -1,0 +1,61 @@
+module.exports = {
+  // For ReferenceError errors
+  "^ReferenceError: (.+) is not defined$": "Check if you have declared the variable or imported the module properly.",
+  // For TypeError errors, e.g., calling a non-function
+  "^TypeError: (.+) is not a function$": "Ensure that the variable is a function and that you are not trying to call a non-function value.",
+  // For SyntaxError errors
+  "^SyntaxError: Unexpected token (.+)$": "Check your syntax, it seems there is an unexpected token.",
+  "^SyntaxError: Unexpected end of input$": "Check if all your brackets, parentheses, and quotes are properly closed.",
+  "^SyntaxError: Unexpected string$": "Check if you have mismatched quotes or if a string is not properly closed.",
+  // For RangeError errors
+  "^RangeError: Maximum call stack size exceeded$": "You might have a recursive function without a base case or an infinite loop.",
+  "^RangeError: Invalid array length$": "Check if you are trying to create an array with a negative length or a length that exceeds the maximum allowed.",
+  // For URIError errors
+  "^URIError: URI malformed$": "Check if you are passing a malformed URI to encodeURI or decodeURI.",
+  // For EvalError errors
+  "^EvalError: (.+)$": "Avoid using eval() as it can lead to security vulnerabilities and performance issues.",
+  // For common mistakes
+  "^TypeError: Cannot read property '(.+)' of undefined$": "Check if the object you are trying to access is defined.",
+  "^TypeError: Cannot set property '(.+)' of undefined$": "Check if the object you are trying to modify is defined.",
+  "^TypeError: (.+) is not iterable$": "Ensure that the variable you are trying to iterate over is an array or a string.",
+  "^TypeError: (.+) is not a constructor$": "Check if you are trying to use a non-constructor function with the 'new' keyword.",
+  "^TypeError: Failed to fetch$": "Check if the URL is correct and the server is responding.",
+  "^TypeError: Assignment to constant variable.$": "Ensure that you are not trying to reassign a value to a constant variable.",
+  "^TypeError: Cannot read property '(.+)' of null$": "Check if the object you are trying to access is not null.",
+  "^TypeError: Cannot read property '(.+)' of NaN$": "Check if the object you are trying to access is not NaN.",
+  "^TypeError: Cannot read property '(.+)' of Infinity$": "Check if the object you are trying to access is not Infinity.",
+  "^TypeError: Cannot read property '(.+)' of -Infinity$": "Check if the object you are trying to access is not -Infinity.",
+  "^TypeError: Cannot read property '(.+)' of Symbol$": "Check if the object you are trying to access is not a Symbol.",
+  "^TypeError: Cannot read property '(.+)' of BigInt$": "Check if the object you are trying to access is not a BigInt.",
+  // Advanced and less common errors
+  "^TypeError: Cannot read property '(.+)' of Map$": "Ensure that the object you are trying to access is a Map.",
+  "^TypeError: Cannot read property '(.+)' of Set$": "Ensure that the object you are trying to access is a Set.",
+  "^TypeError: Cannot read property '(.+)' of WeakMap$": "Ensure that the object you are trying to access is a WeakMap.",
+  "^TypeError: Cannot read property '(.+)' of WeakSet$": "Ensure that the object you are trying to access is a WeakSet.",
+  "^TypeError: Cannot read property '(.+)' of ArrayBuffer$": "Ensure that the object you are trying to access is an ArrayBuffer.",
+  "^TypeError: Cannot read property '(.+)' of DataView$": "Ensure that the object you are trying to access is a DataView.",
+  "^TypeError: Cannot read property '(.+)' of SharedArrayBuffer$": "Ensure that the object you are trying to access is a SharedArrayBuffer.",
+  "^TypeError: Cannot read property '(.+)' of Atomics$": "Ensure that the object you are trying to access is Atomics.",
+  "^TypeError: Cannot read property '(.+)' of JSON$": "Ensure that the object you are trying to access is JSON.",
+  "^TypeError: Cannot read property '(.+)' of Reflect$": "Ensure that the object you are trying to access is Reflect.",
+  "^TypeError: Cannot read property '(.+)' of Proxy$": "Ensure that the object you are trying to access is a Proxy.",
+  "^TypeError: Cannot read property '(.+)' of Intl$": "Ensure that the object you are trying to access is Intl.",
+  "^TypeError: Cannot read property '(.+)' of WebAssembly$": "Ensure that the object you are trying to access is WebAssembly.",
+  "^TypeError: Cannot read property '(.+)' of Generator$": "Ensure that the object you are trying to access is a Generator.",
+  "^TypeError: Cannot read property '(.+)' of AsyncGenerator$": "Ensure that the object you are trying to access is an AsyncGenerator.",
+  "^TypeError: Cannot read property '(.+)' of GeneratorFunction$": "Ensure that the object you are trying to access is a GeneratorFunction.",
+  "^TypeError: Cannot read property '(.+)' of AsyncGeneratorFunction$": "Ensure that the object you are trying to access is an AsyncGeneratorFunction.",
+  "^TypeError: Cannot read property '(.+)' of AsyncFunction$": "Ensure that the object you are trying to access is an AsyncFunction.",
+  "^TypeError: Cannot read property '(.+)' of Function$": "Ensure that the object you are trying to access is a Function.",
+  "^TypeError: Cannot read property '(.+)' of Promise$": "Ensure that the object you are trying to access is a Promise.",
+  "^TypeError: Cannot read property '(.+)' of RegExp$": "Ensure that the object you are trying to access is a RegExp.",
+  "^TypeError: Cannot read property '(.+)' of Date$": "Ensure that the object you are trying to access is a Date.",
+  "^TypeError: Cannot read property '(.+)' of Error$": "Ensure that the object you are trying to access is an Error.",
+  "^TypeError: Cannot read property '(.+)' of EvalError$": "Ensure that the object you are trying to access is an EvalError.",
+  "^TypeError: Cannot read property '(.+)' of RangeError$": "Ensure that the object you are trying to access is a RangeError.",
+  "^TypeError: Cannot read property '(.+)' of ReferenceError$": "Ensure that the object you are trying to access is a ReferenceError.",
+  "^TypeError: Cannot read property '(.+)' of SyntaxError$": "Ensure that the object you are trying to access is a SyntaxError.",
+  "^TypeError: Cannot read property '(.+)' of TypeError$": "Ensure that the object you are trying to access is a TypeError.",
+  "^TypeError: Cannot read property '(.+)' of URIError$": "Ensure that the object you are trying to access is a URIError.",
+  // You can add more patterns and hints here...
+};

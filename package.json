@@ -1,0 +1,13 @@
+{
+  "name": "errboost",
+  "version": "1.0.0",
+  "description": "Enhances error logging with additional context and suggestions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/errorLogger.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
